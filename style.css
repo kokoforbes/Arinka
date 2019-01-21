@@ -1,0 +1,230 @@
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    background: linear-gradient(180deg, #EB5757 0%, #D59152 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-bottom: 80px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 2%;
+    margin-bottom: 8vh;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav a.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  nav a.brand img {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav li a {
+    padding: 0.5rem 1rem;
+  }
+  
+  nav button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  header .header-text {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  header p {
+    font-size: 22px;
+  }
+  
+  header form {
+    position: absolute;
+    bottom: -1.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header input[type="search"] {
+    padding: 1.5rem 2rem;
+    border-radius: 40px;
+    border: 2px solid #F2994A;
+    max-width: 600px;
+    width: 30vw;
+    min-width: 25rem;
+  }
+  
+  header input[type="search"]:focus {
+    outline: none;
+    font-size: 16px;
+  }
+  
+  section.about {
+    padding-top: 10rem;
+  }
+  
+  section.about .title-text {
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    color: #C3C0C0;
+    text-align: center;
+  }
+  
+  section.about .title-text+p {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    max-width: 65vw;
+    margin: 2rem auto 4rem;
+  }
+  
+  .places {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10% 10vh;
+  }
+  
+  .places .place {
+    flex: 1 0;
+    margin: 1rem;
+    position: relative;
+    color: white;
+    height: 22.5rem;
+  }
+  
+
+  .place img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.8);
+  }
+  
+  .place .caption {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+  
+  .place .caption h4 {
+    font-size: 28px;
+    margin-bottom: -0.5rem;
+    line-height: 1
+  }
+  
+  .place .caption p {
+    color: #D78E52;
+  }
+  
+  section.about .see-more {
+    margin: 0 auto 4rem;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    display: block;
+    text-transform: uppercase;
+    border: 1px solid #E36F55;
+    color: #E46F55;
+  }
+  
+  section.blog {
+    background-image: url('./img/mos-min.png');
+    background-size: cover;
+    color: white;
+    position: relative;
+  }
+  
+  section.blog h1 {
+    font-size: 3.5rem;
+    z-index: 20;
+  }
+  
+  section.blog .caption-text {
+    font-style: normal;
+    margin-bottom: 0rem;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #FEBE61;
+  }
+  
+  .blog-text {
+    padding: 4.5rem 2% 4.5rem 10%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30vw;
+    background: linear-gradient(180deg, #E36E55 0%, #D78F52 100%);
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  }
+  
+  footer {
+    backrgound: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+  }
+  
+  footer a {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 15px;
+    color: #A9A9A9;
+    text-decoration: none;
+  }
+  
+
+  @media screen and (max-width: 700px) {
+    .places .place {
+        flex: 80% 0;
+      }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+    }
+  }
